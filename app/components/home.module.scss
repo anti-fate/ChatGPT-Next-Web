@@ -1,10 +1,10 @@
 @mixin container {
-  background-color: var(--black);
+  background-color: var(--black);//white 没发现区别
   border: var(--border-in-light);
   border-radius: 20px;
   box-shadow: var(--shadow);
   color: var(--black);
-  background-color: var(--white);
+  background-color: var(--black);// white
   min-width: 600px;
   min-height: 370px;
   max-width: 1200px;
@@ -45,7 +45,7 @@
   background-color: var(--second);
   display: flex;
   flex-direction: column;
-  box-shadow: inset -2px 0px 2px 0px rgb(0, 0, 0, 0.05);
+  box-shadow: inset -2px 0px 2px 0px rgb(14, 147, 72, 0.05) // (0, 0, 0, 0.05);
   position: relative;
   transition: width ease 0.05s;
 
@@ -65,7 +65,7 @@
   &:hover,
   &:active {
     .sidebar-drag {
-      background-color: rgba($color: #000000, $alpha: 0.01);
+      background-color: rgba($color:#e90d0d, $alpha: 0.01);// #000000
 
       svg {
         opacity: 0.2;
@@ -82,7 +82,7 @@
   right: 0;
   height: 100%;
   width: $width;
-  background-color: rgba($color: #000000, $alpha: 0);
+  background-color: rgba($color:#f40707 , $alpha: 0);// #000000
   cursor: ew-resize;
   transition: all ease 0.3s;
   display: flex;
@@ -151,8 +151,8 @@
   animation: slide-in ease 0.3s;
 }
 
-.sidebar-sub-title {
-  font-size: 120px;
+.sidebar-sub-title {//左侧边栏副标题：build your ai assistant
+  font-size: 12px;
   font-weight: 400;
   animation: slide-in ease 0.3s;
 }
@@ -186,7 +186,7 @@
 }
 
 .chat-item-title {
-  font-size: 24px; // 14px
+  font-size: 48px; // 14px
   font-weight: bolder;
   display: block;
   width: calc(100% - 15px);
@@ -218,8 +218,8 @@
   display: flex;
   justify-content: space-between;
   color: rgb(166, 166, 166);
-  font-size: 12px;
-  margin-top: 8px;
+  font-size: 48px;  // 12px
+  margin-top: 28px; // 8px
   animation: slide-in ease 0.3s;
 }
 
@@ -288,7 +288,7 @@
     }
 
     .chat-item-narrow-count {
-      font-size: 24px;
+      font-size: 48px;  //24px
       font-weight: bolder;
       text-align: center;
       color: var(--primary);
