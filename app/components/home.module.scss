@@ -1,5 +1,5 @@
 @mixin container {
-  background-color: var(--white);
+  background-color: var(--black);
   border: var(--border-in-light);
   border-radius: 20px;
   box-shadow: var(--shadow);
@@ -41,17 +41,17 @@
   top: 0;
   width: var(--sidebar-width);
   box-sizing: border-box;
-  padding: 200px;
+  padding: 20px;
   background-color: var(--second);
   display: flex;
   flex-direction: column;
-  box-shadow: inset -2px 0px 2px 0px rgb(100, 100,100, 0.05);
+  box-shadow: inset -2px 0px 2px 0px rgb(0, 0, 0, 0.05);
   position: relative;
   transition: width ease 0.05s;
 
   .sidebar-header-bar {
     display: flex;
-    margin-bottom: 200px;
+    margin-bottom: 20px;
 
     .sidebar-bar-button {
       flex-grow: 1;
@@ -75,12 +75,12 @@
 }
 
 .sidebar-drag {
-  $width: 104px;
+  $width: 14px;
 
   position: absolute;
   top: 0;
   right: 0;
-  height: 1000%;
+  height: 100%;
   width: $width;
   background-color: rgba($color: #000000, $alpha: 0);
   cursor: ew-resize;
@@ -96,7 +96,7 @@
 
 .window-content {
   width: var(--window-content-width);
-  height: 1000%;
+  height: 100%;
   display: flex;
   flex-direction: column;
 }
@@ -152,7 +152,7 @@
 }
 
 .sidebar-sub-title {
-  font-size: 12px;
+  font-size: 120px;
   font-weight: 400;
   animation: slide-in ease 0.3s;
 }
@@ -164,10 +164,10 @@
 }
 
 .chat-item {
-  padding: 100px 140px;
-  background-color: var(--black);
-  border-radius: 100px;
-  margin-bottom: 100px;
+  padding: 10px 14px;
+  background-color: var(--white);
+  border-radius: 10px;
+  margin-bottom: 10px;
   box-shadow: var(--card-shadow);
   transition: background-color 0.3s ease;
   cursor: pointer;
@@ -186,11 +186,11 @@
 }
 
 .chat-item-title {
-  font-size: 140px;
+  font-size: 24px; // 14px
   font-weight: bolder;
   display: block;
-  width: calc(1000% - 105px);
-  overflow: hidden;
+  width: calc(100% - 15px);
+  // overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
   animation: slide-in ease 0.3s;
@@ -217,9 +217,9 @@
 .chat-item-info {
   display: flex;
   justify-content: space-between;
-  color: rgb(6, 6, 6);
-  font-size: 102px;
-  margin-top: 80px;
+  color: rgb(166, 166, 166);
+  font-size: 12px;
+  margin-top: 8px;
   animation: slide-in ease 0.3s;
 }
 
@@ -247,7 +247,7 @@
     .sidebar-bar-button {
       &:not(:last-child) {
         margin-right: 0;
-        margin-bottom: 100px;
+        margin-bottom: 10px;
       }
     }
   }
@@ -274,7 +274,7 @@
     color: var(--black);
     transform: translateX(0);
     transition: all ease 0.3s;
-    padding: 40px;
+    padding: 4px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -288,7 +288,7 @@
     }
 
     .chat-item-narrow-count {
-      font-size: 240px;
+      font-size: 24px;
       font-weight: bolder;
       text-align: center;
       color: var(--primary);
@@ -306,7 +306,7 @@
 
       .sidebar-action {
         margin-right: 0;
-        margin-top: 105px;
+        margin-top: 15px;
       }
     }
   }
@@ -315,7 +315,7 @@
 .sidebar-tail {
   display: flex;
   justify-content: space-between;
-  padding-top: 200px;
+  padding-top: 20px;
 }
 
 .sidebar-actions {
@@ -323,7 +323,7 @@
 }
 
 .sidebar-action:not(:last-child) {
-  margin-right: 150px;
+  margin-right: 15px;
 }
 
 .loading-content {
@@ -331,11 +331,10 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 1000%;
-  width: 1000%;
+  height: 100%;
+  width: 100%;
 }
 
 .rtl-screen {
   direction: rtl;
 }
-
