@@ -41,17 +41,17 @@
   top: 0;
   width: var(--sidebar-width);
   box-sizing: border-box;
-  padding: 20px;
+  padding: 200px;
   background-color: var(--second);
   display: flex;
   flex-direction: column;
-  box-shadow: inset -2px 0px 2px 0px rgb(0, 0, 0, 0.05);
+  box-shadow: inset -2px 0px 2px 0px rgb(100, 100,100, 0.05);
   position: relative;
   transition: width ease 0.05s;
 
   .sidebar-header-bar {
     display: flex;
-    margin-bottom: 20px;
+    margin-bottom: 200px;
 
     .sidebar-bar-button {
       flex-grow: 1;
@@ -75,12 +75,12 @@
 }
 
 .sidebar-drag {
-  $width: 14px;
+  $width: 104px;
 
   position: absolute;
   top: 0;
   right: 0;
-  height: 100%;
+  height: 1000%;
   width: $width;
   background-color: rgba($color: #000000, $alpha: 0);
   cursor: ew-resize;
@@ -96,7 +96,7 @@
 
 .window-content {
   width: var(--window-content-width);
-  height: 100%;
+  height: 1000%;
   display: flex;
   flex-direction: column;
 }
@@ -164,10 +164,10 @@
 }
 
 .chat-item {
-  padding: 10px 14px;
-  background-color: var(--white);
-  border-radius: 10px;
-  margin-bottom: 10px;
+  padding: 100px 140px;
+  background-color: var(--black);
+  border-radius: 100px;
+  margin-bottom: 100px;
   box-shadow: var(--card-shadow);
   transition: background-color 0.3s ease;
   cursor: pointer;
@@ -186,10 +186,10 @@
 }
 
 .chat-item-title {
-  font-size: 14px;
+  font-size: 140px;
   font-weight: bolder;
   display: block;
-  width: calc(100% - 15px);
+  width: calc(1000% - 105px);
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -217,9 +217,9 @@
 .chat-item-info {
   display: flex;
   justify-content: space-between;
-  color: rgb(166, 166, 166);
-  font-size: 12px;
-  margin-top: 8px;
+  color: rgb(6, 6, 6);
+  font-size: 102px;
+  margin-top: 80px;
   animation: slide-in ease 0.3s;
 }
 
@@ -247,7 +247,7 @@
     .sidebar-bar-button {
       &:not(:last-child) {
         margin-right: 0;
-        margin-bottom: 10px;
+        margin-bottom: 100px;
       }
     }
   }
@@ -274,7 +274,7 @@
     color: var(--black);
     transform: translateX(0);
     transition: all ease 0.3s;
-    padding: 4px;
+    padding: 40px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -288,7 +288,7 @@
     }
 
     .chat-item-narrow-count {
-      font-size: 24px;
+      font-size: 240px;
       font-weight: bolder;
       text-align: center;
       color: var(--primary);
@@ -306,7 +306,7 @@
 
       .sidebar-action {
         margin-right: 0;
-        margin-top: 15px;
+        margin-top: 105px;
       }
     }
   }
@@ -315,7 +315,7 @@
 .sidebar-tail {
   display: flex;
   justify-content: space-between;
-  padding-top: 20px;
+  padding-top: 200px;
 }
 
 .sidebar-actions {
@@ -323,7 +323,7 @@
 }
 
 .sidebar-action:not(:last-child) {
-  margin-right: 15px;
+  margin-right: 150px;
 }
 
 .loading-content {
@@ -331,8 +331,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100%;
-  width: 100%;
+  height: 1000%;
+  width: 1000%;
 }
 
 .rtl-screen {
